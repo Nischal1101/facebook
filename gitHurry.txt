@@ -1,3 +1,4 @@
+        Github codes for beginners
 staging area : where files are kept ready to be commited
 commit: It creates snapshot of the currently staged changes
 git global config --user.name
