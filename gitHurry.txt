@@ -1,0 +1,58 @@
+staging area : where files are kept ready to be commited
+commit: It creates snapshot of the currently staged changes
+git global config --user.name
+git global config --user.email
+git status//used to check git status
+git init //to initialize git repository
+git add --a or git add . //used to add all file to staging area
+git commit -m "comment"//used to commit files
+git log //used to see all commits 
+git add file_name //used to add individual file 
+rm -rf .git ///used to delete git repository
+git diff //compares working dir with staging area.
+git commit -a -m "comment" //skipping staging area
+git rm nischal.txt //To remove (delete) a file
+git mv nischal.txt nischal_renamed.txt //to rename file
+git rm --cached file.txt //untrack files
+git clone folder_name //cloning remote repository.
+git log -p //view prev commits.
+git log -n //view n no of prev commits.
+git log --stat 
+git log --pretty=oneline
+git log --pretty=short
+git log --pretty=full
+git commit --amend //to change commit.
+:wq to exit vim editor
+---------------to undo changes ---------
+git restore file.txt  //discard changes in working directory.
+git restore --staged nischal.txt //unstage nischal.txt
+git checkout -- filename.txt  // removes only unstaged codes.
+git checkout -f //current staged changes i.e. not commited will be lost and goes to prev commit.
+ Remote repository:
+pull: to get code
+push: to add to remote repository (github)
+1) git remote //to check remote
+2) git remote add origin ....(copy link from github)
+3) git push -u origin master
+->>>>>>>>>>>>
+alias for shortcut
+to use git st inpla
+ce of git submit use
+git config --global alias.st status //run once and enjoy always.
+--->>>>>>>>>>>>>>>>>>>
+ creating and switching branches in git 
+ git checkout -b develop //creates and switch to newbranch 
+git checkout master //to change branch to master
+git merge branch_name //to merge two branches.
+-----------To undo commited change-------------
+git log 
+git revert commit_id //to undo commited change.
+git revert -n commit_id     //same as above but doesn't commit  changed file
+
+
+..........................................
+FOR UPLOADING CURRENT REPO TO GITHUB
+git remote add origin <url>
+git push -u origin master.
+    TO REMOVE REMOTE FROM REPOSITORY.
+git remote remove origin 
